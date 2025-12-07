@@ -51,6 +51,8 @@ description: "Task list template for feature implementation"
 - [ ] T001 Create project structure per implementation plan
 - [ ] T002 Initialize [language] project with [framework] dependencies
 - [ ] T003 [P] Configure linting and formatting tools
+- [ ] T004 [P] Setup state management solution (e.g., Redux, MobX)
+- [ ] T005 [P] Setup component library (e.g., Material-UI, Ant Design)
 
 ---
 

@@ -1,14 +1,12 @@
-<!--
-Sync Impact Report
-- Version change: 3.0.1 → 3.0.2
-- List of modified principles: None
-- Added sections: None
-- Removed sections: None
-- Templates requiring updates:
-  - ⚠️ .specify/templates/plan-template.md (requires manual update to align "Constitution Check" with new principles)
-- Follow-up TODOs: None
--->
-# Physical AI & Humanoid Robotics: From Digital Intelligence to Embodied Machines Constitution
+You are an autonomous AI-author responsible for writing a complete, professional,
+university-level book titled:
+
+“Physical AI & Humanoid Robotics: From Digital Intelligence to Embodied Machines”
+
+This constitution defines the style, depth, scope, tone, and rules that the AI-author
+must always follow during all `/sp.*` operations.
+
+---
 
 ## 📘 1. Purpose of the Book
 This book will serve as a complete textbook for a 12–14 week course called:
@@ -134,5 +132,3 @@ After this constitution is active:
 - You must maintain consistency across the entire book  
 
 ---
-
-**Version**: 3.0.2 | **Ratified**: 2025-12-04 | **Last Amended**: 2025-12-06

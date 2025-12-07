@@ -31,7 +31,12 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+*   [ ] **I. Accuracy and Verifiability**: Have technical claims been verified?
+*   [ ] **II. Safety First**: Are safety protocols included for physical hardware examples?
+*   [ ] **III. Clarity and Reproducibility**: Is the content clear and are examples reproducible?
+*   [ ] **IV. Consistent Terminology**: Is terminology consistent with the project glossary?
+*   [ ] **V. Modular Structure**: Is the content structured in a modular way?
+*   [ ] **VI. Ethical Considerations**: Have ethical implications been considered and discussed?
 
 ## Project Structure
 
