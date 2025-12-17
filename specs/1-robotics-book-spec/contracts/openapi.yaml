@@ -1,0 +1,39 @@
+openapi: 3.0.0
+info:
+  title: RAG Chatbot API
+  version: 1.0.0
+  description: API for the RAG-powered chatbot for the "Physical AI & Humanoid Robotics" book.
+
+paths:
+  /chat:
+    post:
+      summary: Send a message to the chatbot
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                session_id:
+                  type: string
+                  format: uuid
+                  description: The ID of the chat session. If not provided, a new session will be created.
+                message:
+                  type: string
+                  description: The user's message.
+      responses:
+        '200':
+          description: The chatbot's response.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  session_id:
+                    type: string
+                    format: uuid
+                  response:
+                    type: string
+components:
+  schemas: {}
