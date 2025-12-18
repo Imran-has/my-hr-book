@@ -71,7 +71,7 @@ const Chatbot = () => {
 
     try {
       // Include auth token in request headers
-      const response = await fetch('http://localhost:8000/api/chat', {
+      const response = await fetch('https://imranhas-rag-chatbot-api.hf.space/api/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

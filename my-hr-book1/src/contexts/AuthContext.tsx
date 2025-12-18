@@ -28,7 +28,7 @@ export interface AuthContextType {
 
 // --- Configuration ---
 // Change this to your FastAPI backend URL
-const API_BASE_URL = 'http://localhost:8000';
+const API_BASE_URL = 'https://imranhas-rag-chatbot-api.hf.space';
 
 // Set to true for demo mode (no backend needed)
 // Set to false when your FastAPI backend has /auth/login and /auth/register endpoints
