@@ -9,6 +9,11 @@ const config: Config = {
   tagline: 'Where Digital Intelligence Learns to Move',
   favicon: 'img/favicon.ico',
 
+  // Custom fields accessible via useDocusaurusContext()
+  customFields: {
+    apiUrl: process.env.API_URL || 'https://imranhas-rag-chatbot-api.hf.space',
+  },
+
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4

@@ -9,6 +9,7 @@ import React, { useState, useEffect, useRef, useContext } from 'react';
 import styles from './styles.module.css';
 import clsx from 'clsx';
 import AuthContext from '@site/src/contexts/AuthContext';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 // --- Type Definitions for TypeScript ---
 interface Message {
@@ -30,6 +31,10 @@ const ChatMessage = ({ message, isBot }: { message: string, isBot: boolean }) =>
 
 // --- Main Floating Chatbot Component ---
 const Chatbot = () => {
+  // Get API URL from Docusaurus config (supports environment variables)
+  const { siteConfig } = useDocusaurusContext();
+  const apiUrl = (siteConfig.customFields?.apiUrl as string) || 'https://imranhas-rag-chatbot-api.hf.space';
+
   // Get auth token from context (safe - won't throw if outside provider)
   const auth = useContext(AuthContext);
   const token = auth?.token ?? null;
@@ -71,7 +76,7 @@ const Chatbot = () => {
 
     try {
       // Include auth token in request headers
-      const response = await fetch('https://imranhas-rag-chatbot-api.hf.space/api/chat', {
+      const response = await fetch(`${apiUrl}/api/chat`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
